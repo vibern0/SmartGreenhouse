@@ -5,6 +5,10 @@
 
 struct component_
 {
+    bool is_input;
+    bool is_digital;
+    byte port_no;
+    char c_name[4];
     bool status;
     byte turn_on;
     byte turn_off;
