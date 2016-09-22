@@ -10,8 +10,8 @@ struct component_
     byte port_no;
     char c_name[4];
     bool status;
-    byte turn_on;
-    byte turn_off;
+    byte turn_min;
+    byte turn_max;
 };
 typedef component_ component;
 struct components_

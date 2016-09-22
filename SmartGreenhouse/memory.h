@@ -1,7 +1,7 @@
 #ifndef MEMORY_HEADER 
 #define MEMORY_HEADER
 
-#define MEMORY_VERSION            4
+#define MEMORY_VERSION            5
 
 #define MEMORY_ADRESS_STATUS      0
 #define MEMORY_ADRESS_COMPONENT   1
@@ -33,8 +33,8 @@ struct components_ load_data()
             components.comp[i].port_no = 255;
             strcpy(components.comp[i].c_name, "");
             components.comp[i].status = false;
-            components.comp[i].turn_on = 0;
-            components.comp[i].turn_off = 0;
+            components.comp[i].turn_min = 0;
+            components.comp[i].turn_max = 0;
         }
     }
     return components;
