@@ -59,6 +59,7 @@ void init_components(struct components_ comps)
 {
     for(byte c = 0; c < TOTAL_COMPONENTS; c++)
     {
+        if(comps.comp[c].port_no == 255) continue;
         pinMode(comps.comp[c].port_no, ((comps.comp[c].is_input) ? (INPUT) : (OUTPUT)));
     }
 }

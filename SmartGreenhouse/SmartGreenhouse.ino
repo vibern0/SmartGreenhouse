@@ -14,6 +14,9 @@ void setup()
     init_components(components);
 }
 
+//fix bug at cfg command
+//reload components when change info
+
 void loop()
 {
     if(Serial.available() > 0)
